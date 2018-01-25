@@ -1,5 +1,6 @@
 package com.example.mujahid.retrofitdemo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -32,6 +33,7 @@ ApiInterface apiInterface;
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
  recyclerView = findViewById(R.id.recycle);
  layoutManager = new LinearLayoutManager(this);
  recyclerView.setLayoutManager(layoutManager);
@@ -71,7 +73,15 @@ ApiInterface apiInterface;
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.furit) {
+            Intent intent = new Intent(this, Vagitable.class);
+            intent.putExtra("get","fruit");
+            startActivity(intent);
+            return true;
+        }else if(id == R.id.vagitable){
+            Intent intent = new Intent(this, Vagitable.class);
+            intent.putExtra("get","vegitable");
+            startActivity(intent);
             return true;
         }
 
