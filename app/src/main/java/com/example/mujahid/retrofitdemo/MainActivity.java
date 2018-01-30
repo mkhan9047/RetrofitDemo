@@ -13,6 +13,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.mujahid.retrofitdemo.GithubApi.GithubActivity;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,7 +41,7 @@ ApiInterface apiInterface;
  recyclerView.setLayoutManager(layoutManager);
  recyclerView.setHasFixedSize(true);
  apiInterface = ApiClient.getRetrofit().create(ApiInterface.class);
- final Call<List<Contact>> contact = apiInterface.getConatct();
+ final Call<List<Contact>> contact = apiInterface.getConatct("Mujahid Khan");
  contact.enqueue(new Callback<List<Contact>>() {
     @Override
     public void onResponse(Call<List<Contact>> call, Response<List<Contact>> response) {
@@ -81,6 +83,10 @@ ApiInterface apiInterface;
         }else if(id == R.id.vagitable){
             Intent intent = new Intent(this, Vagitable.class);
             intent.putExtra("get","vegitable");
+            startActivity(intent);
+            return true;
+        }else if(id == R.id.git){
+            Intent intent = new Intent(this, GithubActivity.class);
             startActivity(intent);
             return true;
         }

@@ -12,4 +12,9 @@
         android:orderInCategory="100"
         android:title="Vagitable"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/git"
+        android:orderInCategory="100"
+        android:title="Github"
+        app:showAsAction="never" />
 </menu>

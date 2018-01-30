@@ -22,7 +22,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".calc" />
-        <activity android:name=".Vagitable"></activity>
+        <activity android:name=".Vagitable" />
+        <activity android:name=".GithubApi.GithubActivity"></activity>
     </application>
 
 </manifest>

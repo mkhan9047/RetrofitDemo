@@ -16,7 +16,7 @@
 
             <de.hdodenhof.circleimageview.CircleImageView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/main_Image"
+                android:id="@+id/avater"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:src="@drawable/profile"
@@ -34,26 +34,8 @@
                 android:layout_marginStart="20dp"
                 />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Price: $8"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:id="@+id/price"
-                android:layout_gravity="center_vertical|center_horizontal"
-                android:layout_marginStart="25dp"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Caloire: 69"
-                android:textStyle="bold"
-                android:id="@+id/calorie"
-                android:textSize="20sp"
-                android:layout_gravity="center_vertical|end"
-                android:layout_marginStart="20dp"
-                />
+
+
 
         </LinearLayout>
 

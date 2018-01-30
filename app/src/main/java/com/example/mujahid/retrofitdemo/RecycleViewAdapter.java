@@ -14,7 +14,9 @@ import java.util.List;
  */
 
 public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.MyViewHolder> {
+
     List<Contact> data = new ArrayList<>();
+
     public RecycleViewAdapter(List<Contact> d){
         data  = d;
     }
@@ -39,7 +41,9 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder{
+
         TextView name, father_name, email, phone;
+
         public MyViewHolder(View itemView) {
             super(itemView);
             name = itemView.findViewById(R.id.show_name);
