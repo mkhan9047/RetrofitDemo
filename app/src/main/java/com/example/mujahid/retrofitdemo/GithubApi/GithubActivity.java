@@ -17,6 +17,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class GithubActivity extends AppCompatActivity {
+
  ListView listView;
  RecyclerView recyclerView;
  RecyclerView.LayoutManager layoutManager;
@@ -24,6 +25,7 @@ public class GithubActivity extends AppCompatActivity {
  ArrayAdapter<String> arrayAdapter;
  List<GithubRepo> repos;
  GithubInterface githubInterface;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

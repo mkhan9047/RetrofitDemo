@@ -24,6 +24,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class GithubRecycler extends RecyclerView.Adapter<GithubRecycler.MyViewHolder> {
 
     Context context;
+
     List<GithubRepo> data = new ArrayList<>();
 
     public GithubRecycler(List<GithubRepo> d, Context context){
@@ -32,6 +33,7 @@ public class GithubRecycler extends RecyclerView.Adapter<GithubRecycler.MyViewHo
     }
     @Override
     public GithubRecycler.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.github_recycler,parent,false);
 
         return new GithubRecycler.MyViewHolder(view);
